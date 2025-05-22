@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Breakpoints & Media Queries</title>
+
+    <script>
+      function showbrowserwidth(){
+        const widths = window.innerWidth;
+        document.querySelector('h1').innerText = `Width:${widths}`;
+      }
+
+      window.onload = showbrowserwidth;
+      window.onresize = showbrowserwidth;
+    </script>
   </head>
   <!-- Tailwind is mobile-first -->
-  <body></body>
+  <body>
+   <h1 class="sm:bg-red-800"></h1>
+
+  </body>
 </html>
 
 <!-- Breakpoint Classes
